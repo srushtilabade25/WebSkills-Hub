@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+      <link rel="stylesheet" href="index.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<style>
+  *{
+    background-color: black;
+    
+  }
+</style>
+</head>
+<body>
+    <!----navbar---->
+    <nav class="navbar bg-black fixed-top">
+  <div class="container-fluid bg-black">
+    <a class="navbar-brand text-white " href="#">Animeverse</a>
+    <button class="navbar-toggler bg-body-tertiary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel text-white hov">Animeverse</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active text-white hov" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white hov" href="#">Anime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white hov" href="#">Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white hov" href="#">Help</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!---image carousel--->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://wallpapercave.com/wp/wp5493855.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="https://wallpapercave.com/wp/wp7091939.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="https://wallpapercave.com/wp/wp13506187.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://wallpapercave.com/wp/wp11466962.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="https://wallpapercave.com/wp/wp12984716.jpg" class="d-block w-100" alt="..." />
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <!---images--->
+  <h3 class="heading text-center text-white">------Popular Movie--------</h3>
+  <div class="container width-100">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="https://img.freepik.com/premium-photo/japanese-girl-cherry-blossom-tree-landscape-anime-manga-illustration_691560-7776.jpg?w=2000" class="card-img-top" alt="..."height="500px">
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://images2.fanpop.com/image/photos/8900000/anime-girl-anime-girls-8951100-1800-2560.jpg" class="card-img-top" alt="..."height="500px">
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://images6.fanpop.com/image/photos/36900000/Cute-Anime-Girl-anime-36962613-2560-1440.jpg " class="card-img-top" alt="..."height="500px">
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://img.freepik.com/free-photo/anime-character-traveling_23-2151140116.jpg" class="card-img-top" alt="..."height="500px">
+    </div>
+    </div>
+    <div class="col">
+    <div class="card">
+      <img src=" https://img.freepik.com/free-photo/medium-shot-anime-characters-hugging_23-2150970929.jpg" class="card-img-top" alt="..."height="500px">
+    </div>
+    </div>
+    <div class="col">
+    <div class="card">
+      <img src=" https://c.wallhere.com/photos/44/ce/Stable_Diffusion_4K_women_AI_art_magic_wizard_anime-2216260.jpg!d" class="card-img-top" alt="..."height="500px">
+    </div>
+    </div>
+</div>
+ </div>
+
+  <!---pagination--->
+<div class="content">
+  <nav aria-label="Page navigation example ">
+  <ul class="pagination justify-content-center ">
+    <li class="page-item disabled ">
+      <a class="page-link"  href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>     
+  </ul>
+</nav>
+
+<!--contact form and model-->
+
+<div class="card_container">
+  <h3 class="heading text-white text-center">---------Contact us---------</h3>
+  <div class="row" style="margin: 20px 200px 20px 200px;">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+     <img src="https://cdn.pixabay.com/photo/2023/11/10/16/05/anime-8379662_1280.jpg " alt="" height="400px">
+    </div>
+  </div>
+
+
+  <div class="col-sm-6">
+    <div class="card" >
+      <form action="" style="padding: 10px;">
+
+<!--name text input-->
+
+        <div class="mb-3">          <!--mb => Margin bottom-->
+  <label for="exampleFormControlInput1" class="form-label">Name: </label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Name">
+</div>
+<!--email input-->
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email </label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<!--text area-->
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+</div> 
+<!--submit button-->
+<button type="submit" class="btn btn-primary" >Submit</button>
+
+
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <!--footer card-->
+
+  <div class="card text-center">
+  
+  <div class="card-body">
+    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+</svg>
+</a>
+    <ul class="nav justify-content-center">
+      
+      <li  class="nav-item">
+        <a class="nav-link text-white hov" data-bs-toggle="modal" data-bs-target="#examplemodal" aria-current="true" href="#">A-Z List</a>
+      </li>
+      <li  class="nav-item">
+        <a class="nav-link text-white hov" href="#">Recently added</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white hov" href="#">Upcoming</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white hov" href="#">Most Watched</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white hov" href="#">FAQ</a>
+      </li>
+      <li  class="nav-item">
+        <a class="nav-link text-white hov" href="#">Contacts</a>
+      </li>
+    </ul><br>
+
+
+  
+    <h5 class="card-title text-danger">---Animeverse---</h5> <br>
+    <p class="card-text text-white hov ">Copyright <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+  <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/>
+</svg> Animeverse.to.AllRights Reserved</p>
+    
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade text-black" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">comingsoon..</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-primary">
+       new features  will unlock soon!
+      </div>   
+    </div>
+  </div>
+</div>
+</body>
+</html>

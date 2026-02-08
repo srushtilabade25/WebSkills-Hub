@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4e54c8;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .item {
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .item:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Web Development Topics</h1>
+
+        <div class="container">
+            <div class="item">HTML Basics</div>
+            <div class="item">CSS Fundamentals</div>
+            <div class="item">JavaScript</div>
+            <div class="item">Responsive Design</div>
+            <div class="item">CSS Grid</div>
+            <div class="item">Flexbox</div>
+            <div class="item">Git & GitHub</div>
+            <div class="item">Bootstrap</div>
+            <div class="item">React Basics</div>
+            <div class="item">Node.js</div>
+            <div class="item">MongoDB</div>
+            <div class="item">Project Practice</div>
+        </div>
+    </main>
+
+</body>
+</html>
